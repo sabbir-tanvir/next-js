@@ -1,10 +1,5 @@
+import { Signup } from "@/components/Signup";
 
-
-export default function Home() {
-    return (
-      <div>
-        hello Signup
-      </div>
-    );
-  }
-  
+export default function SignupPage() {
+    return <Signup />
+}

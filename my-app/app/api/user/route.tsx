@@ -1,3 +1,5 @@
+import { NextRequest, NextResponse } from 'next/server';
+
 
 export async function GET() {
   return Response.json({
@@ -6,9 +8,8 @@ export async function GET() {
   })
 }
 
-export async function POST() {  
-  return Response.json({
-    name: "Tanvir Sabbir",
-    email: "tanvir@gmail.com"
-  })
+export async function POST(req: NextRequest) {
+    const body = await req.json();
+
+    return NextResponse.json({ username: body.username, password: body.password })
 }
