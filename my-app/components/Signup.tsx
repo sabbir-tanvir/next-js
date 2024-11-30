@@ -3,11 +3,9 @@
 import axios from "axios";
 import { ChangeEventHandler, useState } from "react";
 
-
 export function Signup() {
     const [username, setUsername] = useState("");
     const [password, setPassword] = useState("");
-
 
     return <div className="h-screen flex justify-center flex-col">
         <div className="flex justify-center">
